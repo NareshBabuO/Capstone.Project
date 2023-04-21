@@ -21,10 +21,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Employee getByEmployeeID(long employeeID) throws InValidEmployeeIDException {
 		Employee employee = employeeRepository.findById(employeeID).orElse(null);
-		if (employee == null) {
-			throw new InValidEmployeeIDException("Employee with ID " + employeeID + " not found.");
+		if(employee != null) {
+			return employee;
 		}
-		return employee;
+		else {
+			throw new InValidEmployeeIDException("No Employee Details Found with Id:"+employeeID);
+		}
 	}
 
 }

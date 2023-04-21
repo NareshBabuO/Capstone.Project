@@ -27,9 +27,12 @@ class EmployeeServiceImplTest {
 
 	@Test
 	void testGetByEmployeeID() throws InValidEmployeeIDException {
-
+		// Employee employee = new Employee();
 		Employee employeeID = employeeService.getByEmployeeID(1002);
+		
 		assertNotNull(employeeID);
+		
+	//	assertEquals(employee, employeeID);
 	}
-
+	
 }
