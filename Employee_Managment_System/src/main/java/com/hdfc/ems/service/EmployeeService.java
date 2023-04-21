@@ -1,11 +1,11 @@
-package com.hdfc.ems.entity.service;
+package com.hdfc.ems.service;
 /**
  *@author NareshBabu O
  *@created 21-Apr-2023
 *
  */
 import com.hdfc.ems.entity.Employee;
-import com.hdfc.ems.entity.exception.InValidEmployeeIDException;
+import com.hdfc.ems.exception.InValidEmployeeIDException;
 
 public interface EmployeeService {
 	

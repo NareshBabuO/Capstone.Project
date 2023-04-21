@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hdfc.ems.entity.Employee;
-import com.hdfc.ems.entity.exception.InValidEmployeeIDException;
-import com.hdfc.ems.entity.service.EmployeeService;
+import com.hdfc.ems.exception.InValidEmployeeIDException;
+import com.hdfc.ems.service.EmployeeService;
 
 /**
  * @author NareshBabu O

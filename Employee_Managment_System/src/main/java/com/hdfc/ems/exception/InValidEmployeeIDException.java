@@ -1,4 +1,4 @@
-package com.hdfc.ems.entity.exception;
+package com.hdfc.ems.exception;
 /**
  *@author NareshBabu O
  *@created 21-Apr-2023

@@ -1,4 +1,4 @@
-package com.hdfc.ems.entity.exception;
+package com.hdfc.ems.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

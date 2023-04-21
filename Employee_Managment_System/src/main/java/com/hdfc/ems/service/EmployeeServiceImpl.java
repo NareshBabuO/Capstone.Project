@@ -1,4 +1,4 @@
-package com.hdfc.ems.entity.service;
+package com.hdfc.ems.service;
 
 /**
  *@author NareshBabu O
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hdfc.ems.entity.Employee;
-import com.hdfc.ems.entity.exception.InValidEmployeeIDException;
+import com.hdfc.ems.exception.InValidEmployeeIDException;
 import com.hdfc.ems.repository.EmployeeRepository;
 
 @Service
