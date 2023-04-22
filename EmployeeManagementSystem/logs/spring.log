@@ -93,3 +93,173 @@
 2023-04-22 16:33:04.712  INFO 12344 --- [http-nio-8686-exec-4] c.h.e.p.controller.EmployeeController    : Getting user by ID: 1001
 2023-04-22 16:34:28.730  INFO 12344 --- [http-nio-8686-exec-8] c.h.e.p.controller.EmployeeController    : Getting user by ID: 10012
 2023-04-22 16:34:28.746  WARN 12344 --- [http-nio-8686-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.hdfc.ems.project.exception.InValidEmployeeIDException: Employee with ID 10012 not found]
+2023-04-22 17:13:42.975  INFO 12344 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-22 17:13:43.002  INFO 12344 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-22 17:13:43.004  INFO 12344 --- [Thread-11] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-22 17:13:43.017  INFO 12344 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 17:13:43.019  INFO 12344 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-04-22 17:13:43.032  INFO 12344 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-04-22 17:13:43.141  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Starting EmployeeManagementSystemApplication using Java 17.0.6 on DESKTOP-BPNARK5 with PID 12344 (C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem\bin\main started by Naresh in C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem)
+2023-04-22 17:13:43.142  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-22 17:13:43.583  INFO 12344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 17:13:43.599  INFO 12344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2023-04-22 17:13:43.720  INFO 12344 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5869a165] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-22 17:13:43.734  INFO 12344 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-22 17:13:43.802  WARN 12344 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:keystore.p12'
+2023-04-22 17:13:43.809  INFO 12344 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-22 17:13:43.874 ERROR 12344 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:keystore.p12'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.11.jar:2.7.11]
+	at com.hdfc.ems.project.EmployeeManagementSystemApplication.main(EmployeeManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.11.jar:2.7.11]
+Caused by: org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:keystore.p12'
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslKeyStore(SslConnectorCustomizer.java:154) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSsl(SslConnectorCustomizer.java:103) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.customize(SslConnectorCustomizer.java:61) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeSsl(TomcatServletWebServerFactory.java:366) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeConnector(TomcatServletWebServerFactory.java:343) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:203) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.7.11.jar:2.7.11]
+	... 13 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [keystore.p12] cannot be resolved to URL because it does not exist
+	at org.springframework.util.ResourceUtils.getURL(ResourceUtils.java:137) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslKeyStore(SslConnectorCustomizer.java:151) ~[spring-boot-2.7.11.jar:2.7.11]
+	... 20 common frames omitted
+
+2023-04-22 17:32:33.738  INFO 12908 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Starting EmployeeManagementSystemApplication using Java 17.0.6 on DESKTOP-BPNARK5 with PID 12908 (C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem\bin\main started by Naresh in C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem)
+2023-04-22 17:32:33.741  INFO 12908 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-22 17:32:33.870  INFO 12908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-22 17:32:33.872  INFO 12908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-22 17:32:35.174  INFO 12908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 17:32:35.410  INFO 12908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 220 ms. Found 1 JPA repository interfaces.
+2023-04-22 17:32:35.946  INFO 12908 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b2de71f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-22 17:32:36.078  INFO 12908 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-22 17:32:36.529  WARN 12908 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:capstone.sks'
+2023-04-22 17:32:36.547  INFO 12908 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-22 17:32:36.590 ERROR 12908 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:capstone.sks'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.11.jar:2.7.11]
+	at com.hdfc.ems.project.EmployeeManagementSystemApplication.main(EmployeeManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.11.jar:2.7.11]
+Caused by: org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:capstone.sks'
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslKeyStore(SslConnectorCustomizer.java:154) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSsl(SslConnectorCustomizer.java:103) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.customize(SslConnectorCustomizer.java:61) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeSsl(TomcatServletWebServerFactory.java:366) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeConnector(TomcatServletWebServerFactory.java:343) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:203) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.7.11.jar:2.7.11]
+	... 13 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [capstone.sks] cannot be resolved to URL because it does not exist
+	at org.springframework.util.ResourceUtils.getURL(ResourceUtils.java:137) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslKeyStore(SslConnectorCustomizer.java:151) ~[spring-boot-2.7.11.jar:2.7.11]
+	... 20 common frames omitted
+
+2023-04-22 17:33:16.342  INFO 11356 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Starting EmployeeManagementSystemApplication using Java 17.0.6 on DESKTOP-BPNARK5 with PID 11356 (C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem\bin\main started by Naresh in C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem)
+2023-04-22 17:33:16.345  INFO 11356 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-22 17:33:16.470  INFO 11356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-22 17:33:16.472  INFO 11356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-22 17:33:17.991  INFO 11356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 17:33:18.227  INFO 11356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 216 ms. Found 1 JPA repository interfaces.
+2023-04-22 17:33:18.700  INFO 11356 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$97cae08d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-22 17:33:18.786  INFO 11356 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-22 17:33:19.375  WARN 11356 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:capstone.sks'
+2023-04-22 17:33:19.391  INFO 11356 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-22 17:33:19.436 ERROR 11356 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:capstone.sks'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.11.jar:2.7.11]
+	at com.hdfc.ems.project.EmployeeManagementSystemApplication.main(EmployeeManagementSystemApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.11.jar:2.7.11]
+Caused by: org.springframework.boot.web.server.WebServerException: Could not load key store 'classpath:capstone.sks'
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslKeyStore(SslConnectorCustomizer.java:154) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSsl(SslConnectorCustomizer.java:103) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.customize(SslConnectorCustomizer.java:61) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeSsl(TomcatServletWebServerFactory.java:366) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.customizeConnector(TomcatServletWebServerFactory.java:343) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:203) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184) ~[spring-boot-2.7.11.jar:2.7.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.7.11.jar:2.7.11]
+	... 13 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [capstone.sks] cannot be resolved to URL because it does not exist
+	at org.springframework.util.ResourceUtils.getURL(ResourceUtils.java:137) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer.configureSslKeyStore(SslConnectorCustomizer.java:151) ~[spring-boot-2.7.11.jar:2.7.11]
+	... 20 common frames omitted
+
+2023-04-22 17:36:09.563  INFO 12736 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Starting EmployeeManagementSystemApplication using Java 17.0.6 on DESKTOP-BPNARK5 with PID 12736 (C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem\bin\main started by Naresh in C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem)
+2023-04-22 17:36:09.566  INFO 12736 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-22 17:36:09.686  INFO 12736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-22 17:36:09.686  INFO 12736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-22 17:36:10.723  INFO 12736 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 17:36:10.923  INFO 12736 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms. Found 1 JPA repository interfaces.
+2023-04-22 17:36:11.352  INFO 12736 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d8cd02f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-22 17:36:11.431  INFO 12736 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-22 17:36:11.840  INFO 12736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8686 (https)
+2023-04-22 17:36:11.854  INFO 12736 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 17:36:11.855  INFO 12736 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-22 17:36:12.002  INFO 12736 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 17:36:12.003  INFO 12736 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2315 ms
+2023-04-22 17:36:12.062  INFO 12736 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 17:36:12.495  INFO 12736 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 17:36:12.510  INFO 12736 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/Employee_Managment_System'
+2023-04-22 17:36:12.729  INFO 12736 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 17:36:12.838  INFO 12736 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-22 17:36:13.130  INFO 12736 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 17:36:13.346  INFO 12736 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-22 17:36:14.224  INFO 12736 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 17:36:14.239  INFO 12736 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 17:36:14.698  WARN 12736 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 17:36:16.201  INFO 12736 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-22 17:36:16.331  INFO 12736 --- [restartedMain] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8686], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Lenovo/Desktop/CapstoneProject/EmployeeManagementSystem/bin/main/capstone.jks] using alias [spring-https] and with trust store [null]
+2023-04-22 17:36:16.363  INFO 12736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8686 (https) with context path ''
+2023-04-22 17:36:16.387  INFO 12736 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Started EmployeeManagementSystemApplication in 7.617 seconds (JVM running for 8.662)
+2023-04-22 17:37:23.536  INFO 12736 --- [https-jsse-nio-8686-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 17:37:23.536  INFO 12736 --- [https-jsse-nio-8686-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 17:37:23.539  INFO 12736 --- [https-jsse-nio-8686-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-22 17:37:24.752  INFO 12736 --- [https-jsse-nio-8686-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 469 ms
+2023-04-22 17:37:36.500  INFO 12736 --- [https-jsse-nio-8686-exec-3] c.h.e.p.controller.EmployeeController    : Getting user by ID: 1001
+2023-04-22 17:37:40.816  INFO 12736 --- [https-jsse-nio-8686-exec-8] c.h.e.p.controller.EmployeeController    : Getting user by ID: 10012
+2023-04-22 17:37:40.829  WARN 12736 --- [https-jsse-nio-8686-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.hdfc.ems.project.exception.InValidEmployeeIDException: Employee with ID 10012 not found]
