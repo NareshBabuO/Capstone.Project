@@ -1,0 +1,95 @@
+2023-04-22 16:27:34.266  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Starting EmployeeManagementSystemApplication using Java 17.0.6 on DESKTOP-BPNARK5 with PID 12344 (C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem\bin\main started by Naresh in C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem)
+2023-04-22 16:27:34.269  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-22 16:27:34.422  INFO 12344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-22 16:27:34.422  INFO 12344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-22 16:27:35.948  INFO 12344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 16:27:36.233  INFO 12344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 259 ms. Found 1 JPA repository interfaces.
+2023-04-22 16:27:36.733  INFO 12344 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5869a165] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-22 16:27:36.823  INFO 12344 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-22 16:27:37.480  INFO 12344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8686 (http)
+2023-04-22 16:27:37.506  INFO 12344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 16:27:37.508  INFO 12344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-22 16:27:37.750  INFO 12344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 16:27:37.751  INFO 12344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3324 ms
+2023-04-22 16:27:37.848  INFO 12344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-22 16:27:38.550  INFO 12344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-22 16:27:38.581  INFO 12344 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/Employee_Managment_System'
+2023-04-22 16:27:38.973  INFO 12344 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 16:27:39.084  INFO 12344 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-22 16:27:39.510  INFO 12344 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-22 16:27:39.750  INFO 12344 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-22 16:27:41.066  INFO 12344 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 16:27:41.100  INFO 12344 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:27:41.792  WARN 12344 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 16:27:43.910  INFO 12344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-22 16:27:44.027  INFO 12344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8686 (http) with context path ''
+2023-04-22 16:27:44.066  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Started EmployeeManagementSystemApplication in 10.8 seconds (JVM running for 12.239)
+2023-04-22 16:28:30.359  INFO 12344 --- [http-nio-8686-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 16:28:30.360  INFO 12344 --- [http-nio-8686-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 16:28:30.368  INFO 12344 --- [http-nio-8686-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-04-22 16:28:31.659  INFO 12344 --- [http-nio-8686-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 488 ms
+2023-04-22 16:28:38.642  INFO 12344 --- [http-nio-8686-exec-3] c.h.e.p.controller.EmployeeController    : Getting user by ID: 1001
+2023-04-22 16:29:40.372  INFO 12344 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-22 16:29:40.480  INFO 12344 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-22 16:29:40.485  INFO 12344 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-22 16:29:40.595  INFO 12344 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:29:40.620  INFO 12344 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-22 16:29:40.717  INFO 12344 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-22 16:29:41.202  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Starting EmployeeManagementSystemApplication using Java 17.0.6 on DESKTOP-BPNARK5 with PID 12344 (C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem\bin\main started by Naresh in C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem)
+2023-04-22 16:29:41.203  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-22 16:29:42.974  INFO 12344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 16:29:43.062  INFO 12344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interfaces.
+2023-04-22 16:29:43.465  INFO 12344 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5869a165] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-22 16:29:43.473  INFO 12344 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-22 16:29:43.689  INFO 12344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8686 (http)
+2023-04-22 16:29:43.691  INFO 12344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 16:29:43.693  INFO 12344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-22 16:29:43.927  INFO 12344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 16:29:43.931  INFO 12344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2717 ms
+2023-04-22 16:29:44.020  INFO 12344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-04-22 16:29:44.086  INFO 12344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-04-22 16:29:44.087  INFO 12344 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/Employee_Managment_System'
+2023-04-22 16:29:44.279  INFO 12344 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 16:29:44.306  INFO 12344 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-22 16:29:44.427  INFO 12344 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 16:29:44.427  INFO 12344 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:29:45.173  WARN 12344 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 16:29:48.368  INFO 12344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-22 16:29:48.421  INFO 12344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8686 (http) with context path ''
+2023-04-22 16:29:48.472  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Started EmployeeManagementSystemApplication in 7.543 seconds (JVM running for 136.644)
+2023-04-22 16:29:48.501  INFO 12344 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-22 16:31:51.874  INFO 12344 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-22 16:31:51.897  INFO 12344 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-22 16:31:51.903  INFO 12344 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:31:51.904  INFO 12344 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-04-22 16:31:51.913  INFO 12344 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-04-22 16:31:52.129  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Starting EmployeeManagementSystemApplication using Java 17.0.6 on DESKTOP-BPNARK5 with PID 12344 (C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem\bin\main started by Naresh in C:\Users\Lenovo\Desktop\CapstoneProject\EmployeeManagementSystem)
+2023-04-22 16:31:52.129  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2023-04-22 16:31:52.574  INFO 12344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22 16:31:52.594  INFO 12344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+2023-04-22 16:31:52.714  INFO 12344 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5869a165] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-22 16:31:52.718  INFO 12344 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-22 16:31:52.800  INFO 12344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8686 (http)
+2023-04-22 16:31:52.803  INFO 12344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22 16:31:52.804  INFO 12344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-22 16:31:52.891  INFO 12344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22 16:31:52.892  INFO 12344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 759 ms
+2023-04-22 16:31:52.938  INFO 12344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-04-22 16:31:52.977  INFO 12344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-04-22 16:31:52.978  INFO 12344 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/Employee_Managment_System'
+2023-04-22 16:31:53.024  INFO 12344 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22 16:31:53.038  INFO 12344 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-22 16:31:53.149  INFO 12344 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22 16:31:53.150  INFO 12344 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22 16:31:53.431  WARN 12344 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22 16:31:54.633  INFO 12344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-22 16:31:54.659  INFO 12344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8686 (http) with context path ''
+2023-04-22 16:31:54.666  INFO 12344 --- [restartedMain] .e.p.EmployeeManagementSystemApplication : Started EmployeeManagementSystemApplication in 2.66 seconds (JVM running for 262.838)
+2023-04-22 16:31:54.668  INFO 12344 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-22 16:32:57.603  INFO 12344 --- [http-nio-8686-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-22 16:32:57.608  INFO 12344 --- [http-nio-8686-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-22 16:32:57.612  INFO 12344 --- [http-nio-8686-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-04-22 16:32:58.501  INFO 12344 --- [http-nio-8686-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 185 ms
+2023-04-22 16:33:04.712  INFO 12344 --- [http-nio-8686-exec-4] c.h.e.p.controller.EmployeeController    : Getting user by ID: 1001
+2023-04-22 16:34:28.730  INFO 12344 --- [http-nio-8686-exec-8] c.h.e.p.controller.EmployeeController    : Getting user by ID: 10012
+2023-04-22 16:34:28.746  WARN 12344 --- [http-nio-8686-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.hdfc.ems.project.exception.InValidEmployeeIDException: Employee with ID 10012 not found]
