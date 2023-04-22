@@ -1,1 +1,0 @@
-FROM openjdf:11

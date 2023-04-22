@@ -1,0 +1,23 @@
+package com.hdfc.ems.project.dto;
+
+import java.time.LocalDate;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
+public class EmployeeDTO {
+	
+	private long employeeID;
+
+	private String employeeName;
+
+	private LocalDate dateOfBirth;
+
+}
