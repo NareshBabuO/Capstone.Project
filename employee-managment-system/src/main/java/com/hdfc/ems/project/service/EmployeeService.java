@@ -1,11 +1,10 @@
 package com.hdfc.ems.project.service;
 
-import com.hdfc.ems.project.dto.EmployeeDTO;
-import com.hdfc.ems.project.entity.Employee;
 import com.hdfc.ems.project.exception.InValidEmployeeIDException;
+import com.hdfc.ems.project.vo.EmployeeVO;
 
 public interface EmployeeService {
 
-	public Employee getByEmployeeID(long employeeID) throws InValidEmployeeIDException;
+	public EmployeeVO getEmployeeById(long employeeID) throws InValidEmployeeIDException;
 
 }

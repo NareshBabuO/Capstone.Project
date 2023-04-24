@@ -10,6 +10,7 @@ import com.hdfc.ems.project.entity.Employee;
 import com.hdfc.ems.project.exception.EmployeeIDException;
 import com.hdfc.ems.project.exception.InValidEmployeeIDException;
 import com.hdfc.ems.project.service.EmployeeService;
+import com.hdfc.ems.project.vo.EmployeeVO;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -26,16 +27,12 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
 
-	@GetMapping("/get/{employeeId}")
-	public Employee getEmployeeById(@PathVariable long employeeId)
+	@GetMapping("/get/{employeeID}")
+	public EmployeeVO getEmployeeById(@PathVariable long employeeID)
 			throws EmployeeIDException, InValidEmployeeIDException {
-		log.info("Getting user by ID: {}", employeeId+"checking..............");
-		Employee employee = employeeService.getByEmployeeID(employeeId);
-
-		if (employee == null) {
-			throw new EmployeeIDException("Employee not found with ID: " + employeeId);
-		}
-		return employee;
+		log.info("Getting user by ID: {}", employeeID + " checking..............");
+		
+		return employeeService.getEmployeeById(employeeID);
 	}
 
 }
