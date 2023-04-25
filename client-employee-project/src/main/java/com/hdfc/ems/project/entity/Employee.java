@@ -14,7 +14,6 @@ import java.util.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
-import java.time.LocalDate;
 
 public class Employee {
 
@@ -29,6 +28,9 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 
+	private static final String ALGORITHM = "AES";
+	private static final String KEY = "employeeencrp345";
+
 	private static String decrypt(String encryptedText, String key) {
 		try {
 			Key aesKey = new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8), ALGORITHM);
@@ -40,9 +42,6 @@ public class Employee {
 			throw new RuntimeException("Error decrypting text", e);
 		}
 	}
-
-	private static final String ALGORITHM = "AES";
-	private static final String KEY = "employeeencrp345";
 
 	public Employee(long employeeId, String employeeName, String dateOfBirth) {
 		super();

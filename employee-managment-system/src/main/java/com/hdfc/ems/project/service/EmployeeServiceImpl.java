@@ -14,18 +14,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	EmployeeRepository employeeRepository;
 
-	/*
-	 * @Override public EmployeeVO getByEmployeeID(long employeeID) throws
-	 * InValidEmployeeIDException { Employee employee =
-	 * employeeRepository.findById(employeeID) .orElseThrow(() -> new
-	 * InValidEmployeeIDException("Invalid EmployeeID :" + employeeID));
-	 * 
-	 * EmployeeVO employeeVO = new EmployeeVO(employee.getEmployeeID(),
-	 * employee.getEmployeeName(), employee.getDateOfBirth()); return employeeVO;
-	 * 
-	 * }
-	 */
-
 	@Override
 	public EmployeeVO getEmployeeById(long employeeID) throws InValidEmployeeIDException {
 		Employee employee = employeeRepository.findById(employeeID).orElseThrow(

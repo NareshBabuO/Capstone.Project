@@ -22,9 +22,9 @@ class EmployeeServiceImplTest {
 
 	@Test
 	void testGetByEmployeeID() throws InValidEmployeeIDException {
-		EmployeeVO employeeID = employeeService.getEmployeeById(1002);
+		EmployeeVO employeeID = employeeService.getEmployeeById(16103);
 		
-		assertEquals("Mahesh",employeeID.getEmployeeName());
+		assertEquals("Nandan",employeeID.getEmployeeName());
 		
 	}
 	

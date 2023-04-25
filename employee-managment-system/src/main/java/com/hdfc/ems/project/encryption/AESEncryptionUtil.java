@@ -11,7 +11,7 @@ import org.springframework.security.crypto.encrypt.TextEncryptor;
 
 public class AESEncryptionUtil {
 
-	public static final String ALG = "AES-256";
+	public static final String ALG = "AES";
 	public static final String PASSWORD = "EmployeeEncryption@123";
 
 	private static TextEncryptor textEncryptor = Encryptors.text(ALG, PASSWORD);
