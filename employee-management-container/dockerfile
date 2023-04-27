@@ -1,4 +1,0 @@
-FROM openjdk:8
-EXPOSE 8989
-ADD build/libs/employee-management-container-0.0.1-SNAPSHOT.jar  employee-management-container-0.0.1-SNAPSHOT.jar
-ENTRYPOINT [ "java","-jar","/employee-management-container-0.0.1-SNAPSHOT.jar" ]

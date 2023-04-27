@@ -25,7 +25,6 @@ public class Employee {
 
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	private static final String ALGORITHM = "AES";

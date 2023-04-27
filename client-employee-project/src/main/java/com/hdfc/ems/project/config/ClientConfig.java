@@ -1,6 +1,13 @@
 package com.hdfc.ems.project.config;
 
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.security.KeyManagementException;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.CertificateException;
+
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
@@ -26,22 +33,27 @@ public class ClientConfig {
 	@Bean
 	RestTemplate restTemplate(RestTemplateBuilder builder) {
 	    return builder
-	    		.requestFactory( () -> validateSSL())
+	    		.requestFactory( () -> {
+					try {
+						return validateSSL();
+					} catch (KeyManagementException | NoSuchAlgorithmException | KeyStoreException
+							| CertificateException | IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					return null;
+				})
 	            .build();
 	}
 	 
-	 private HttpComponentsClientHttpRequestFactory validateSSL(){
-	     String location = "C:\\Users\\Lenovo\\Desktop\\CapstoneProject\\employee-managment-system\\src\\main\\resources\\capstone.p12";
+	 private HttpComponentsClientHttpRequestFactory validateSSL() throws KeyManagementException, NoSuchAlgorithmException, KeyStoreException, CertificateException, FileNotFoundException, IOException{
+	     String location = "C:\\Users\\Lenovo\\Desktop\\CapstoneProject\\employee-management-project\\src\\main\\resources\\capstone.p12";
 	     String pass = "nareshb";
-	     SSLContext sslContext = null;
-	     try{
-	         sslContext = SSLContextBuilder
-	                 .create()
-	                 .loadTrustMaterial(ResourceUtils.getFile(location), pass.toCharArray())
-	                 .build();
-	     }catch (Exception e){
-
-	     }
+	     SSLContext sslContext = SSLContextBuilder
+                 .create()
+                 .loadTrustMaterial(ResourceUtils.getFile(location), pass.toCharArray())
+                 .build();
+	    
 	     SSLConnectionSocketFactory csf = new SSLConnectionSocketFactory(sslContext,new LocalHostnameVerifier());
 	     CloseableHttpClient httpClient = HttpClients.custom().setSSLSocketFactory(csf).build();
 	     HttpComponentsClientHttpRequestFactory requestFactory = new HttpComponentsClientHttpRequestFactory(httpClient);
